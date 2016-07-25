@@ -23,6 +23,12 @@ $(document).ready(function () {
   $('.intercom-launcher-button').click(function(event) {
     dataLayer.push({'event': 'eventGA', 'eventCategory' : 'chat', 'eventAction' : 'bulle en fixe'});
   });
+
+  $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+  });
 });
 
 var cbpAnimatedHeader = (function() {
