@@ -26,7 +26,7 @@
 
   <!-- Custom style from Georges -->
   <link href="custom-style.css" rel="stylesheet">
-  
+
   <!-- Facebook Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -34,7 +34,7 @@
   n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  
+
   fbq('init', '282882485413518');
   fbq('track', "PageView");</script>
   <noscript><img height="1" width="1" style="display:none"
@@ -120,7 +120,7 @@
           </div>
           <p>
             <a class="btn btn-lg m-b-lg btn-primary m-l-sm m-r-sm" href="https://app.georges.tech/inscription" role="button" onclick="dataLayer.push({'event': 'eventGA', 'eventCategory' : 'essai gratuit', 'eventAction' : '#2'});" ><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
-            <a class="btn btn-lg m-b-lg btn-outline btn-default m-l-sm m-r-sm" href="#banque" role="button" onclick="dataLayer.push({'event': 'eventGA', 'eventCategory' : 'essai explicative', 'eventAction' : 'CTA Comment ça marche'});"><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Comment ça marche ?</a>
+            <a class="btn btn-lg m-b-lg btn-outline btn-default m-l-sm m-r-sm" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/kQAHHNzO9wE" role="button" onclick="dataLayer.push({'event': 'eventGA', 'eventCategory' : 'essai explicative', 'eventAction' : 'CTA Comment ça marche'});"><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Comment ça marche ?</a>
           </p>
         </div>
         <div class="col-lg-6 wow zoomIn animated" style="visibility: visible;">
@@ -484,6 +484,21 @@
   </section>
 
 
+  <!-- Comment ça marche modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="close-modal" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div>
+                      <iframe width="100%" height="473" src=""></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
   <!-- Mainly scripts -->
   <script src="./INSPINIA%20-%20Landing%20Page_files/jquery-2.1.1.js"></script>
   <script src="./INSPINIA%20-%20Landing%20Page_files/bootstrap.min.js"></script>
@@ -494,7 +509,7 @@
   <script src="./INSPINIA%20-%20Landing%20Page_files/inspinia.js"></script>
   <script src="./INSPINIA%20-%20Landing%20Page_files/pace.min.js"></script>
   <script src="./INSPINIA%20-%20Landing%20Page_files/wow.min.js"></script>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
