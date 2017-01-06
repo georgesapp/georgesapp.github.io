@@ -448,6 +448,17 @@
     }
 }
 
+.landing-page a.text-navy:hover,
+.landing-page a.text-navy:focus,
+.landing-page a.text-navy:active,
+.landing-page .btn-link.text-navy:hover,
+.landing-page .btn-link.text-navy:focus,
+.landing-page .btn-link.text-navy:active,
+.landing-page .btn-link.text-navy.active,
+.landing-page .open .dropdown-toggle.btn-link.text-navy {
+  color: #009688;
+}
+
 /* CGU page */
 body.landing-page.simple-page {
   background-color: #f3f3f4;
