@@ -87,7 +87,7 @@
 
 /* BANQUE */
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   #banque .feature {
     max-width: 300px;
     margin: 50px auto 50px auto;
@@ -440,7 +440,7 @@
         margin:-12px 0 0 0;
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
     /***** MODAL PROPERTIES *****/
     .close {
         font-size: 80px;
@@ -477,25 +477,36 @@ body.landing-page.simple-page {
   color: #7e7e7e;
 }
 
-.landing-page.simple-page .navbar-wrapper {
-  background: linear-gradient(285deg,#169c81,#465e77);
-  min-height: 80px;
-  margin-bottom: 100px;
-}
-
-.landing-page.simple-page section.content {
+/*.landing-page.simple-page section.content {
   padding-bottom: 70px;
   margin-top: 110px;
-}
+}*/
 
 .landing-page.simple-page section.content .container {
   background-color: white;
   padding: 30px;
 }
 
+@media (max-width: 767px) {
+  .landing-page.simple-page section.content {
+    padding-bottom: 70px;
+    margin-top: 60px;
+  }
+}
 
 @media (min-width: 768px) {
   .landing-page.simple-page .navbar-wrapper {
     margin-top: 0;
+  }
+
+  .landing-page.simple-page .navbar-wrapper {
+    background: linear-gradient(285deg,#169c81,#465e77);
+    min-height: 80px;
+    margin-bottom: 100px;
+  }
+
+  .landing-page.simple-page section.content {
+    padding-bottom: 70px;
+    margin-top: 110px;
   }
 }
