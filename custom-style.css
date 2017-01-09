@@ -473,6 +473,11 @@ body.landing-page.simple-page {
   margin-top: 40px;
 }
 
+.landing-page.simple-page section h3 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 .landing-page.simple-page section p {
   color: #7e7e7e;
 }
